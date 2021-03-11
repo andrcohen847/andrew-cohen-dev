@@ -4,10 +4,20 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
+import pic1 from '../assets/images/pic01.png';
+import pic2 from '../assets/images/pic02.png';
+import pic3 from '../assets/images/pic03.png';
+import pic4 from '../assets/images/andrew-camera.png';
+import pic5 from '../assets/images/andrew-flash-1.png';
+import pic6 from '../assets/images/andrew-flash-2.png';
+
 import config from '../../config';
+
+let display1 = "block"
+let display2 = "none"
+let display3 = "none"
+
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -33,173 +43,160 @@ const IndexPage = () => (
 
     <section id="one" className="wrapper style1 special">
       <div className="inner">
-        <header className="major">
+        <div className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
+            Hi, I'm Andrew. I'm a Full Stack Software Engineer
             <br />
-            eget augue amet aliquet nisl cep donec
+            Proficient In The Following Technologies:
           </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+          <p data-aos="fade-right" data-aos-duration="1500">
+            JavaScript | Node | React | Redux | HTML5 | CSS3
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            Git | Agile | Heroku | Travis CI-CD | Webpack | OAuth
+            <br />
+            Express| Sequelize ORM | PostgresSQL | RESTful API
           </p>
-        </header>
-        <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-        </ul>
+        </div>
       </div>
     </section>
-
+    <section id="projects" className="projects">
+      <h2>Projects</h2>
+    </section>
     <section id="two" className="wrapper alt style2">
-      <section className="spotlight">
+      <section className="spotlight" data-aos="flip-left" data-aos-duration="1500">
         <div className="image">
-          <img src={pic1} alt="" />
+        <a href="https://haircutz.herokuapp.com/"><img src={pic1} alt="" /></a>
         </div>
         <div className="content">
-          <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
-          </h2>
+          <h2><a href="https://haircutz.herokuapp.com/">HairCutz</a></h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            An online multiplayer tower defense game, created with Phaser.js and Socket.io.
           </p>
+          <ul className="icons">
+        {config.hairCutz.map(social => {
+          const { style, icon, name, url } = social;
+          return (
+            <li key={url}>
+              <a href={url} className={`icon ${style} ${icon}`}>
+                <span className="label">{name}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
         </div>
       </section>
-      <section className="spotlight">
+      <section className="spotlight" data-aos="flip-right" data-aos-duration="1500">
         <div className="image">
-          <img src={pic2} alt="" />
+        <a href="https://murray-mania.herokuapp.com/home"><img src={pic2} alt="" /></a>
         </div>
         <div className="content">
-          <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
-          </h2>
+          <h2><a href="https://murray-mania.herokuapp.com/home">Murray Mania</a></h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          A hub for all things Bill Murray, featuring forums, games, and sound boards. Built with React, Redux, and Howler.js.
           </p>
-        </div>
-      </section>
-      <section className="spotlight">
-        <div className="image">
-          <img src={pic3} alt="" />
-        </div>
-        <div className="content">
-          <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
-          </h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-          </p>
-        </div>
-      </section>
-    </section>
-
-    <section id="three" className="wrapper style3 special">
-      <div className="inner">
-        <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
-          </p>
-        </header>
-        <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
+          <ul className="icons">
+          {config.murrayMania.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
-      </div>
-    </section>
-
-    <section id="cta" className="wrapper style4">
-      <div className="inner">
-        <header>
-          <h2>Arcue ut vel commodo</h2>
+        </div>
+      </section>
+      <section className="spotlight" data-aos="flip-left" data-aos-duration="2000">
+        <div className="image">
+        <a href="https://would-you-like-this.herokuapp.com/home"><img src={pic3} alt="" /></a>
+        </div>
+        <div className="content">
+          <h2><a href="https://would-you-like-this.herokuapp.com/home">Would You Like This?</a></h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            An eCommerce website designed with React, Redux, Sequelize, and Express.
+          </p>
+          <ul className="icons">
+          {config.wouldYouLikeThis.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        </div>
+      </section>
+    </section>
+    <section className="wrapper style5">
+    <h2 id="about" className="aboutH">About</h2>
+			<div className="inner">
+				<section>
+					<p><span className="image left">
+          <img src={pic4} alt="" className="display4" data-aos="zoom-in" data-aos-duration="1500"/>
+          <img src={pic5} alt="" className="display5" data-aos="zoom-in" data-aos-duration="1500"/>
+          </span>For the last six years, I've been producing events for industry-leading brands, including Timberland, Cholula, Brooklyn Brewery, and Campari America. I’ve held various event production roles at both brands and agencies, and have experience working with clients of all different backgrounds.
+          <br />
+          <br />
+          When COVID-19 hit the event industry hard in 2020, I leaned into my technology background and began teaching myself Software Development, starting with JavaScript and Node.js. I enjoyed it so much that I enrolled in an immersive 550 hour coding bootcamp through Fullstack Academy, where I worked with several teams of Software Engineers to create real world applications.
+          <br />
+          <br />
+          When I'm not busy coding, I'm usually taking photos, buying used synthesizers on eBay, or trying to teach my dog how to drop something that's probably stuck in his mouth.</p>
+				</section>
+
+			</div>
+		</section>
+    <section id="cta" className="wrapper style4">
+      <div id="contact" className="inner">
+        <header>
+          <h2>Want To Get In Touch?</h2>
+          <p>
+            I'm always happy to collaborate on your project or help develop your app. Feel free to reach out and I'll get back to you as soon as I can.
           </p>
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="/#" className="button fit primary">
-              Activate
+            <a href="mailto:andrcohen847@gmail.com" className="button fit primary">
+              Contact
             </a>
           </li>
           <li>
-            <a href="/#" className="button fit">
-              Learn More
+            <a href="https://drive.google.com/file/d/1l1_u8qVItg0WQ7k1baGtXThW5gMGJ0y1/view?usp=sharing" className="button fit">
+              My Resume
             </a>
           </li>
         </ul>
       </div>
     </section>
+    <section className="wrapper style5">
+    <div className="inner">
+      <section>
+        <form method="post" action="mailto:andrcohen847@gmail.com">
+          <div className="row gtr-uniform">
+            <div className="col-6 col-12-xsmall">
+              <input type="text" name="demo-name" id="demo-name" defaultValue="" placeholder="Name" />
+            </div>
+            <div className="col-6 col-12-xsmall">
+              <input type="email" name="demo-email" id="demo-email" defaultValue="" placeholder="Email" />
+            </div>
+            <div className="col-12">
+              <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+            </div>
+            <div className="col-12">
+              <ul className="actions">
+                <li><input type="submit" value="Send Message" className="primary" /></li>
+              </ul>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </section>
   </Layout>
 );
 

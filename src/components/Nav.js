@@ -21,12 +21,24 @@ export default function Nav({ onMenuToggle = () => {} }) {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="/Generic">Generic Page</Link>
+              <li onClick={() => {
+                onMenuToggle();
+              }}>
+                <a href="#about">About</a>
               </li>
-              <li>
-                <Link to="/Elements">Elements</Link>
+              <li onClick={() => {
+                onMenuToggle();
+              }}>
+                <a href="#projects">Projects</a>
               </li>
+            <li>
+            <a href="http://andrew-b-cohen.com/" target="_blank">Media & Event Portfolio</a>
+          </li>
+          <li onClick={() => {
+            onMenuToggle();
+          }}>
+            <a href="#contact">Contact</a>
+          </li>
             </ul>
             <a
               className="close"

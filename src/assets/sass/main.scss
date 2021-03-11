@@ -94,6 +94,29 @@
 		appearance: none;
 	}
 
+	.display4 {
+		position: absolute;
+	}
+
+
+	.display5 {
+		animation-duration: 6s;
+  	animation-name: appear;
+		animation-iteration-count: infinite;
+		z-index: 1;
+	}
+
+
+	@keyframes appear {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+				}
+	}
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -637,7 +660,7 @@
 
 		&.left,
 		&.right {
-			max-width: 40%;
+			max-width: 45%;
 
 			img {
 				width: 100%;
@@ -792,12 +815,18 @@
 		}
 	}
 
+
 /* Icons */
 
 	ul.icons {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+
+		img {
+			width: 40%;
+			height: auto;
+		}
 
 		li {
 			display: inline-block;
@@ -1054,6 +1083,14 @@
 		}
 	}
 
+	.displayPic {
+		display: block;
+	}
+
+	.hiddenPic {
+		display: none;
+	}
+
 /* Spotlight */
 
 	.spotlight {
@@ -1125,6 +1162,27 @@
 			}
 		}
 	}
+
+	.projects {
+		background-color: _palette(bg);
+		text-align: center;
+		font-size: 150%;
+		text-decoration: underline;
+		border: solid;
+		border-color:_palette(bg);
+
+	}
+
+	.aboutH {
+		background-color: _palette(fg);
+		text-align: center;
+		font-size: 150%;
+		text-decoration: underline;
+		border: solid;
+		border-color:_palette(fg);
+		color:#d0735e;
+	}
+
 
 /* Wrapper */
 
@@ -1483,6 +1541,11 @@
 		width: 100%;
 		z-index: _misc(z-index-base);
 
+		img {
+			height: 80%;
+			width: auto;
+		}
+
 		h1 {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
 			height: inherit;
@@ -1722,6 +1785,8 @@
 		}
 	}
 
+
+
 /* CTA */
 
 	#cta {
@@ -1828,7 +1893,20 @@
 		}
 	}
 
+
 /* Footer */
+
+.icons {
+	font-size: 1.75em;
+
+	a {
+		color: _palette(fg-light);
+
+		&:hover {
+			color: #d0735e;
+		}
+	}
+}
 
 	#footer {
 		@include padding(6em, 0);
@@ -1836,13 +1914,13 @@
 		text-align: center;
 
 		.icons {
-			font-size: 1.25em;
+			font-size: 2.25em;
 
 			a {
 				color: _palette(fg-light);
 
 				&:hover {
-					color: _palette(fg);
+					color: #d0735e;
 				}
 			}
 		}
@@ -1893,6 +1971,14 @@
 		@include breakpoint('<=small') {
 			@include padding(3em, 2em);
 		}
+	}
+
+	.content a:hover {
+		color: #d0735e;
+	}
+
+	.murray img:hover {
+		background-image: url("../images/murray-mania-red.png")
 	}
 
 /* Landing */
