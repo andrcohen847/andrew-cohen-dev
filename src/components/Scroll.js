@@ -1,6 +1,10 @@
 import smoothscroll from 'smoothscroll-polyfill';
 import React from 'react';
 import PropTypes from 'prop-types';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Element = props => {
   return props.children;
