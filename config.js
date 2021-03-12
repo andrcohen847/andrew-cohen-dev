@@ -36,18 +36,6 @@ module.exports = {
       name: 'Facebook',
       url: 'https://www.facebook.com/andrew.cohen.50',
     },
-    {
-      style: 'solid',
-      icon: 'fa-link',
-      name: 'Link',
-      url: 'https://www.andrew-b-cohen.com',
-    },
-    {
-      style: 'solid',
-      icon: 'fa-envelope',
-      name: 'Email',
-      url: 'mailto:andrcohen847@gmail.com',
-    },
   ],
     // projects
   hairCutz: [
