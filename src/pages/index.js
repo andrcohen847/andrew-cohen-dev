@@ -13,11 +13,6 @@ import pic6 from '../assets/images/andrew-flash-2.png';
 
 import config from '../../config';
 
-let display1 = "block"
-let display2 = "none"
-let display3 = "none"
-
-
 const IndexPage = () => (
   <Layout>
     <section id="banner">
