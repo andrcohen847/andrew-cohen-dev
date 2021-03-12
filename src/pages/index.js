@@ -49,7 +49,7 @@ const IndexPage = () => (
             <br />
             Git | Agile | Heroku | Travis CI-CD | Webpack | OAuth
             <br />
-            Express| Sequelize ORM | PostgresSQL | RESTful API
+            Express| Sequelize ORM | PostgreSQL | RESTful API
           </p>
         </div>
       </div>
