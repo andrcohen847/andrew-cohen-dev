@@ -44,7 +44,7 @@ const IndexPage = () => (
             <br />
             Proficient In The Following Technologies:
           </h2>
-          <p data-aos="fade-right" data-aos-duration="1500">
+          <p data-aos="fade-right" data-aos-duration="2000">
             JavaScript | Node | React | Redux | HTML5 | CSS3
             <br />
             Git | Agile | Heroku | Travis CI-CD | Webpack | OAuth
@@ -58,7 +58,7 @@ const IndexPage = () => (
       <h2>Projects</h2>
     </section>
     <section id="two" className="wrapper alt style2">
-      <section className="spotlight" data-aos="flip-left" data-aos-duration="1500">
+      <section className="spotlight" data-aos="flip-left" data-aos-duration="2000">
         <div className="image">
         <a href="https://haircutz.herokuapp.com/"><img src={pic1} alt="" /></a>
         </div>
@@ -81,7 +81,7 @@ const IndexPage = () => (
       </ul>
         </div>
       </section>
-      <section className="spotlight" data-aos="flip-right" data-aos-duration="1500">
+      <section className="spotlight" data-aos="flip-right" data-aos-duration="2000">
         <div className="image">
         <a href="https://murray-mania.herokuapp.com/home"><img src={pic2} alt="" /></a>
         </div>
@@ -133,8 +133,8 @@ const IndexPage = () => (
 			<div className="inner">
 				<section>
 					<p><span className="image left">
-          <img src={pic4} alt="" className="display4" data-aos="zoom-in" data-aos-duration="1500"/>
-          <img src={pic5} alt="" className="display5" data-aos="zoom-in" data-aos-duration="1500"/>
+          <img src={pic4} alt="" className="display4" data-aos="zoom-in" data-aos-duration="2000"/>
+          <img src={pic5} alt="" className="display5" data-aos="zoom-in" data-aos-duration="2000"/>
           </span>For the last six years, I've been producing events for industry-leading brands, including Timberland, Cholula, Brooklyn Brewery, and Campari America. I’ve held various event production roles at both brands and agencies, and have experience working with clients of all different backgrounds.
           <br />
           <br />
