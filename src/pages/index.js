@@ -141,7 +141,7 @@ const IndexPage = () => (
           When COVID-19 hit the event industry hard in 2020, I leaned into my technology background and began teaching myself Software Development, starting with JavaScript and Node.js. I enjoyed it so much that I enrolled in an immersive 550 hour coding bootcamp through Fullstack Academy, where I worked with several teams of Software Engineers to create real world applications.
           <br />
           <br />
-          When I'm not busy coding, I'm usually taking photos, buying used synthesizers on eBay, or trying to teach my dog how to drop something that's probably stuck in his mouth.</p>
+          When I'm not busy coding, I'm usually taking photos, buying used synthesizers, or trying to teach my dog how to drop something that's probably stuck in his mouth.</p>
 				</section>
 
 			</div>
